@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takoradi Technical University</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="bar">
+         <div class="round" style="align-items: center; align-self: center; margin-left: 10px; display: flex; flex-direction: row; justify-content: center; align-items: center;">
+         <img src="hamburger.png" alt="" srcset="" style="object-fit: contain; width: 30px; height: 30px;">
+         </div>
+
+         <h5 style="align-items: center; align-self: center; font-size:17px !important; color: #00008b; text-shadow: 3px 3px #ddd;">TAKORADI TECHNICAL UNIVERSITY<br>NUMBER PLATE RECOGNITION SYSTEM</h5>
+           
+         <div class="" style="display: flex; flex-direction:column">
+         <div class="round2" style="align-items: center; align-self: center; object-fit: contain; display: flex; justify-content: center; align-items: center;">
+            <img src="data:image/png;base64,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" alt="" srcset="">
+         </div>
+                 <h5 style="align-items: center; align-self: center; font-size:12px !important; color: #00008b; text-shadow: 3px 3px #ddd;">{{this.username}}</h5>
+         </div>
+
+        </header>
+        <div class="content">
+             
+            <div class="leftcol" style="display: flex;flex-direction: column; gap: 3px;">
+                <div class="feklogo" style="border-bottom: 1px solid #ccc; width: 100% !important; height: 135px;display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                <img src="ttu.png" alt="" srcset="" style="height: 135px; width: 135px; object-fit: contain;"> 
+            </div>
+                 <div class="menulistbox" style="display: flex; justify-content: center; gap: 30px !important;  align-items: center; flex-direction: column;">
+                <div class="first" style="display: flex; width: 100%;  cursor: pointer; flex-direction: row; background-color: #f3f3f3;    gap: 8px; height: 50px;box-shadow:inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16), inset  -10px -10px 10px -1px rgba(255, 255, 255, 0.7);justify-content: center; align-items: center;">
+                    <box-icon type='solid' name='dashboard'></box-icon>
+                         <a href="/Dashboard" class="" style="text-decoration: none; color:rgba(2,2,54,1)"> <h5>Dashboard</h5></a>
+                
+                </div>
+              
+               
+                <div class="first" style="display: flex; width: 100%; flex-direction: row; cursor: pointer; background-color: rgba(242,203,7,1);  gap: 8px; height: 50px;box-shadow:inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16), inset  -10px -10px 10px -1px rgba(255, 255, 255, 0.7);justify-content: center; align-items: center;">
+                    <box-icon type='solid' name='message-dots'></box-icon>
+                      <a href="/Commercials" class="" style="text-decoration: none; color:rgba(2,2,54,1)"> <h5>Commercials</h5></a>
+                
+                </div>
+                <div class="first" style="display: flex; width: 100%; flex-direction: row; background-color: white;  cursor: pointer;   gap: 8px; height: 50px;box-shadow:inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16), inset  -10px -10px 10px -1px rgba(255, 255, 255, 0.7);justify-content: center; align-items: center;">
+                    <box-icon type='logo' name='gmail'></box-icon>
+                     <a href="/Privates" class="" style="text-decoration: none; color:rgba(2,2,54,1)"> <h5>Privates</h5></a>
+                
+                </div>
+
+
+                <div class="first" style="display: flex; width: 100%; flex-direction: row; background-color: green;  cursor: pointer;   gap: 8px; height: 50px;box-shadow:inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16), inset  -10px -10px 10px -1px rgba(255, 255, 255, 0.7);justify-content: center; align-items: center;">
+                    <box-icon type='logo' name='gmail'></box-icon>
+                     <a href="/Governments" class="" style="text-decoration: none; color:rgba(2,2,54,1)"> <h5>Governments</h5></a>
+                
+                </div>
+
+
+
+
+                 <div class="first" style="display: flex; width: 100%; flex-direction: row; background-color: #f3f3f3;  cursor: pointer;   gap: 8px; height: 50px;box-shadow:inset 10px 10px 10px -1px rgba(10, 99, 169, 0.16), inset  -10px -10px 10px -1px rgba(255, 255, 255, 0.7);justify-content: center; align-items: center;">
+                    <box-icon type='logo' name='gmail'></box-icon>
+                   <a href="/Profile" class="" style="text-decoration: none; color:rgba(2,2,54,1)"> <h5>Profile</h5></a>
+                
+                </div>
+
+
+
+
+
+                </div>
+            </div>
+
+{{{body}}}
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <footer class="foot" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+            <p class="" style="align-self: center;">&copy;Takoradi Technical University 2024 by Danny</p>
+            
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var data = {{this.totalCommercials}}
+     var data1 = {{this.totalPrivates}}
+      var data2 = {{this.totalGovernments}}
+      var arr = [];
+      arr.push(data)
+       arr.push(data2)
+        arr.push(data1)
+console.log(arr)
+let chartCanv = document.getElementById('chart').getContext("2d");
+
+  let chart = new Chart(chartCanv,{
+  type:'doughnut',
+  options:{},
+  data:{
+    labels:['Commercial','Government','Private'],
+    datasets:[
+      {
+        label:'Data showing Commercial, Government and Private Vehicle Entering TTU',
+        data:arr,
+        backgroundColor:[
+          'rgba(242,203,7,1)',
+          'green',
+          'white',
+        ]
+      }
+    ]
+  }
+})
+
+
+
+let chartCanv2 = document.getElementById('charts').getContext("2d");
+
+  let chart2 = new Chart(chartCanv2,{
+  type:'line',
+  options:{},
+  data:{
+    labels:['Commercial','Government','Private'],
+    datasets:[
+      {
+        label:'Data showing Commercial, Government and Private Vehicle Entering TTU',
+        data:arr,
+        backgroundColor:[
+          'rgba(242,203,7,1)',
+          'green',
+          'white',
+        ]
+      }
+    ]
+  }
+})
+
+
+
+
+
+</script>
+<script src="/dash.js"></script>
+
+
+
+</body>
+</html>
